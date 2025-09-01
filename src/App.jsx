@@ -3,6 +3,7 @@ import AboutPage from "./components/views/AboutPage/AboutPage";
 import HomePage from "./components/views/HomePage/HomePage";
 import ContactPage from "./components/views/ContactPage/ContactPage";
 import ProjectPage from "./components/views/ProjectPage";
+import NoPage from "./components/views/NoPage/NoPage";
 
 function App() {
 	return (
