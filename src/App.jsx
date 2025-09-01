@@ -1,19 +1,19 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import AboutPage from "./components/views/AboutPage/AboutPage";
-import HomePage from "./components/views/HomePage/HomePage";
-import ContactPage from "./components/views/ContactPage/ContactPage";
-import ProjectPage from "./components/views/ProjectPage";
-import NoPage from "./components/views/NoPage/NoPage";
+import AboutPage from "./components/views/AboutPage/AboutPage.jsx";
+import HomePage from "./components/views/HomePage/HomePage.jsx";
+import ContactPage from "./components/views/ContactPage/ContactPage.jsx";
+import ProjectPage from "./components/views/ProjectPage/ProjectPage.jsx";
+import NoPage from "./components/views/NoPage/NoPage.jsx";
 
 function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
-				<Route exact path='/' component={HomePage} />
-				<Route exact path='/about' component={AboutPage} />
-				<Route exact path='/contact' component={ContactPage} />
-				<Route exact path='/project' component={ProjectPage} />
-				<Route exact path='*' component={NoPage} />
+				<Route path='/' element={<HomePage />} />
+				<Route path='/about' element={<AboutPage />} />
+				<Route path='/contact' element={<ContactPage />} />
+				<Route path='/project' element={<ProjectPage />} />
+				<Route path='*' element={<NoPage />} />
 			</Routes>
 		</BrowserRouter>
 	);
