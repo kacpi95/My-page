@@ -3,14 +3,22 @@ import styles from "./Header.module.scss";
 
 export default function Header() {
 	return (
-		<section className={styles.header}>
+		<section className={styles.header} id='header'>
 			<Link to={"/"}>
-				<img src='' alt='logo' />
+				<img src='' alt='logo' className={styles.logo} />
 			</Link>
 			<nav className={styles.navigation}>
-				<Link to={"/about"}>O mnie</Link>
-				<Link to={"/contact"}>Kontakt</Link>
-				<Link to={"/project"}>Projekty</Link>
+				<ul>
+					<li>
+						<Link to={"/about"}>O mnie</Link>
+					</li>
+					<li>
+						<Link to={"/contact"}>Kontakt</Link>
+					</li>
+					<li>
+						<Link to={"/project"}>Projekty</Link>
+					</li>
+				</ul>
 			</nav>
 		</section>
 	);
