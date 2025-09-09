@@ -3,7 +3,7 @@ import styles from "./AboutPage.module.scss";
 export default function AboutPage() {
 	return (
 		<section id='about'>
-			<div class='container'>
+			<div className='container'>
 				<div className={styles.wrapperAbout}>
 					<h2>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
