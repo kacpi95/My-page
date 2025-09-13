@@ -1,36 +1,54 @@
 #contact {
 	text-align: center;
-	padding: 2rem;
+	padding: 3rem 2rem;
+	background: #f9f9f9;
 
 	div:first-child {
-		font-size: 1.5rem;
-		margin-bottom: 2rem;
+		font-size: 1.8rem;
+		font-weight: 600;
+		margin-bottom: 2.5rem;
+		color: #333;
 	}
 
 	.contactChoose {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 1.5rem;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+		justify-items: center;
+		gap: 2rem;
+		max-width: 800px;
+		margin: 0 auto;
 
 		div {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+			padding: 1rem;
+			border-radius: 12px;
+			background: #fff;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 			cursor: pointer;
-			transition: transform 0.2s;
+			transition: transform 0.25s ease, box-shadow 0.25s ease;
 
 			&:hover {
-				transform: scale(1.05);
-			}
-
-			span {
-				margin-top: 0.5rem;
-				font-size: 1rem;
+				transform: translateY(-4px);
+				box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 			}
 
 			svg {
-				font-size: 2rem;
+				font-size: 2.5rem;
+				color: #ff6600;
+				transition: color 0.25s ease;
+			}
+
+			span {
+				margin-top: 0.7rem;
+				font-size: 1rem;
+				font-weight: 500;
+				color: #444;
+			}
+
+			&:hover svg {
+				color: #e65c00;
 			}
 		}
 	}
