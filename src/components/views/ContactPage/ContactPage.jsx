@@ -1,43 +1,45 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-	faDiscord,
-	faLinkedin,
-	faFacebook,
-	faWhatsapp,
-} from "@fortawesome/free-brands-svg-icons";
-import styles from "./ContactPage.module.scss";
-import Header from "../../layout/Header/Header";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+  faDiscord,
+  faLinkedin,
+  faFacebook,
+  faWhatsapp,
+} from '@fortawesome/free-brands-svg-icons';
+import styles from './ContactPage.module.scss';
+import Header from '../../layout/Header/Header';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import Footer from '../../layout/Footer/Footer';
 
 export default function ContactPage() {
-	return (
-		<>
-			<Header />
-			<section id='contact'>
-				<div>Wybierz rodzaj kotaktu</div>
-				<div className={styles.contactChoose}>
-					<div>
-						<FontAwesomeIcon icon={faDiscord} />
-						<span>Discrod</span>
-					</div>
-					<div>
-						<FontAwesomeIcon icon={faLinkedin} />
-						<span>Linkedin</span>
-					</div>
-					<div>
-						<FontAwesomeIcon icon={faEnvelope} />
-						<span>E-mail</span>
-					</div>
-					<div>
-						<FontAwesomeIcon icon={faFacebook} />
-						<span>Facebook</span>
-					</div>
-					<div>
-						<FontAwesomeIcon icon={faWhatsapp} />
-						<span>Whatsapp</span>
-					</div>
-				</div>
-			</section>
-		</>
-	);
+  return (
+    <>
+      <Header />
+      <section id='contact'>
+        <div>Wybierz rodzaj kotaktu</div>
+        <div className={styles.contactChoose}>
+          <div>
+            <FontAwesomeIcon icon={faDiscord} />
+            <span>Discrod</span>
+          </div>
+          <div>
+            <FontAwesomeIcon icon={faLinkedin} />
+            <span>Linkedin</span>
+          </div>
+          <div>
+            <FontAwesomeIcon icon={faEnvelope} />
+            <span>E-mail</span>
+          </div>
+          <div>
+            <FontAwesomeIcon icon={faFacebook} />
+            <span>Facebook</span>
+          </div>
+          <div>
+            <FontAwesomeIcon icon={faWhatsapp} />
+            <span>Whatsapp</span>
+          </div>
+        </div>
+      </section>
+      <Footer />
+    </>
+  );
 }
