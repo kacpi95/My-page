@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"NoPage.module.css"}
+{"version":3,"sources":["../src/components/views/NoPage/NoPage.module.scss","NoPage.module.css"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,uBAAA;EACA,gBAAA;EACA,kBAAA;EACA,aAAA;EACA,yBAAA;ACCF;;ADEA;EACE,kCAAA;EACA,iBAAA;EACA,cAAA;EACA,SAAA;ACCF;;ADEA;EACE,mCAAA;EACA,WAAA;EACA,qBAAA;ACCF;;ADEA;EACE,qBAAA;EACA,uBAAA;EACA,yBAAA;EACA,WAAA;EACA,qBAAA;EACA,kBAAA;EACA,gBAAA;EACA,iCAAA;ACCF;ADCE;EACE,yBAAA;ACCJ","file":"NoPage.module.css"}
