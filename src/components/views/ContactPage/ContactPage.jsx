@@ -5,37 +5,36 @@ import {
 	faFacebook,
 	faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
-import styles from "./ContactPage.module.scss";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import styles from "./ContactPage.module.scss";
 
 export default function ContactPage() {
 	return (
-		<>
-			<section id='contact'>
-				<div>Wybierz rodzaj kotaktu</div>
-				<div className={styles.contactChoose}>
-					<div>
-						<FontAwesomeIcon icon={faDiscord} />
-						<span>Discrod</span>
-					</div>
-					<div>
-						<FontAwesomeIcon icon={faLinkedin} />
-						<span>Linkedin</span>
-					</div>
-					<div>
-						<FontAwesomeIcon icon={faEnvelope} />
-						<span>E-mail</span>
-					</div>
-					<div>
-						<FontAwesomeIcon icon={faFacebook} />
-						<span>Facebook</span>
-					</div>
-					<div>
-						<FontAwesomeIcon icon={faWhatsapp} />
-						<span>Whatsapp</span>
-					</div>
+		<section className={styles.contactSection}>
+			<h2>Wybierz rodzaj kontaktu</h2>
+
+			<div className={styles.contactGrid}>
+				<div className={styles.contactItem}>
+					<FontAwesomeIcon icon={faDiscord} />
+					<span>Discord</span>
 				</div>
-			</section>
-		</>
+				<div className={styles.contactItem}>
+					<FontAwesomeIcon icon={faLinkedin} />
+					<span>LinkedIn</span>
+				</div>
+				<div className={styles.contactItem}>
+					<FontAwesomeIcon icon={faEnvelope} />
+					<span>E-mail</span>
+				</div>
+				<div className={styles.contactItem}>
+					<FontAwesomeIcon icon={faFacebook} />
+					<span>Facebook</span>
+				</div>
+				<div className={styles.contactItem}>
+					<FontAwesomeIcon icon={faWhatsapp} />
+					<span>Whatsapp</span>
+				</div>
+			</div>
+		</section>
 	);
 }
