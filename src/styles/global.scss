@@ -1,3 +1,7 @@
+* {
+  background-color: black;
+}
+
 // Colors
 $primary-color: #39ffbd;
 $secondary-color: #6c757d;
@@ -10,10 +14,10 @@ $text-color: #fff;
 $text-color-secondary: #f5f5f5;
 
 // Fonts
-$font-family-base: "Lato", sans-serif;
-$font-family-decorative: "Audiowide", sans-serif;
-$font-family-heading: "Poppins", sans-serif;
-$font-family-title-portfolio: "Bakbak One", sans-serif;
+$font-family-base: 'Lato', sans-serif;
+$font-family-decorative: 'Audiowide', sans-serif;
+$font-family-heading: 'Poppins', sans-serif;
+$font-family-title-portfolio: 'Bakbak One', sans-serif;
 $font-size-base: 16px;
 $font-weight-light: 300;
 $font-weight-regular: 400;

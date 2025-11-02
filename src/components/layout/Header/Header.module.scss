@@ -1,97 +1,67 @@
-@use "../../../styles/global.scss" as *;
+@use '../../../styles/global.scss' as *;
 
 .header {
-	padding: 20px;
-	text-align: center;
-	margin-bottom: -100px;
-	position: relative;
-	z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.2rem 0;
+  z-index: 1000;
+  transition: background-color 0.4s ease;
+  background: transparent;
 
-	@media (min-width: 992px) {
-		padding: 20px 10vw;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		text-align: left;
-		background: none;
-		box-shadow: none;
-	}
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-	.logo {
-		width: 120px;
-		display: inline-block;
+  .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: $text-color;
+    text-decoration: none;
+    transition: color 0.3s ease;
 
-		@media (min-width: 992px) {
-			margin: 0;
-		}
+    &:hover {
+      color: #a259ff;
+    }
+  }
 
-		@media (min-width: 1200px) {
-			width: 150px;
-		}
-	}
+  .navigation ul {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+  }
 
-	.navigation {
-		position: fixed;
-		bottom: 0;
-		left: 0;
-		width: 100%;
-		z-index: 9999;
-		background: linear-gradient(135deg, #212121, #1d1f20);
-		box-shadow: 0 -8px 8px rgba(0, 0, 0, 0.27);
-		padding: $spacing-sm 0;
+  .navigation a {
+    position: relative;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: $text-color;
+    transition: color 0.3s ease;
 
-		@media (min-width: 992px) {
-			position: static;
-			width: auto;
-			background: none;
-			box-shadow: none;
-			padding: 0;
-			z-index: auto;
-		}
+    &:hover {
+      color: #a259ff;
+    }
 
-		ul {
-			display: flex;
-			gap: 1.5rem;
-			justify-content: space-between;
-			padding: 0 20px;
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 0%;
+      height: 2px;
+      background-color: #a259ff;
+      transition: width 0.3s ease;
+    }
 
-			@media (min-width: 450px) {
-				gap: 2rem;
-				padding: 0 10vw;
-			}
-
-			@media (min-width: 992px) {
-				justify-content: flex-start;
-				padding: 0;
-			}
-
-			li {
-				list-style: none;
-
-				a {
-					font-family: $font-family-heading;
-					font-weight: $font-weight-medium;
-					font-size: 13px;
-					text-decoration: none;
-					transition: color 0.3s;
-
-					&:hover {
-						color: $primary-color;
-					}
-
-					@media (max-width: 300px) {
-						font-size: 10px;
-					}
-
-					@media (min-width: 301px) and (max-width: 420px) {
-						font-size: 12px;
-					}
-
-					@media (min-width: 421px) {
-						font-size: $font-size-base;
-					}
-				}
-			}
-		}
-	}
+    &:hover::after {
+      width: 100%;
+    }
+  }
 }
