@@ -1,9 +1,13 @@
 import styles from './ProjectsList.module.scss';
 import projects from '../../../data/projectsData';
+import ProjectPopup from '../ProjectPopup/ProjectPopup';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { useState } from 'react';
 
 export default function ProjectsList() {
+  const [viewProject, setViewProject] = useState(null);
+
   return (
     <section className={styles.projects}>
       <div className={styles.container}>
@@ -22,7 +26,11 @@ export default function ProjectsList() {
 
         <ul className={styles.grid}>
           {projects.map((project, i) => (
-            <li key={i} className={styles.card}>
+            <li
+              key={i}
+              className={styles.card}
+              onClick={() => setViewProject(project)}
+            >
               <h3>{project.title}</h3>
               <p>{project.shortDescription}</p>
 
@@ -40,6 +48,12 @@ export default function ProjectsList() {
           ))}
         </ul>
       </div>
+      {viewProject && (
+        <ProjectPopup
+          project={viewProject}
+          onClose={() => setViewProject(null)}
+        />
+      )}
     </section>
   );
 }
