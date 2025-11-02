@@ -1,1 +1,125 @@
+@use '../../../../styles/global.scss' as *;
 
+.projects {
+  padding: 6rem 0;
+  text-align: center;
+  color: $text-color;
+
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .title {
+    margin-bottom: 3.5rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: $text-color;
+  }
+  .githubText {
+    margin-bottom: 3.5rem;
+    font-size: 1.1rem;
+    color: $text-color;
+
+    .githubLink {
+      margin-left: 0.3rem;
+      text-decoration: none;
+      font-weight: 600;
+      color: #a259ff;
+      transition: color 0.3s ease;
+
+      svg {
+        margin-right: 0.4rem;
+      }
+
+      &:hover {
+        color: $text-color
+      }
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    padding: 0;
+    margin: 0;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  .card {
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 12px;
+
+    &:hover {
+      transform: translateY(-8px);
+    }
+
+    h3 {
+      margin-bottom: 1rem;
+      text-align: center;
+      font-size: 1.7rem;
+      color: $text-color;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+      text-align: center;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: $text-color;
+    }
+
+    .techList {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 2rem;
+      gap: 0.8rem;
+    }
+
+    .tech {
+      padding: 0.6rem 1rem;
+      font-size: 1rem;
+      border-radius: 6px;
+      border: 1px solid #a259ff;
+      color: #a259ff;
+      cursor: default;
+
+      &:hover {
+        background-color: #a259ff;
+        color: $text-color;
+      }
+    }
+    .containerButton {
+      display: flex;
+      justify-content: center;
+    }
+    .viewButton {
+      padding: 0.8rem 1.6rem;
+      border-radius: 6px;
+      font-weight: 700;
+      border: 1px solid #a259ff;
+      cursor: pointer;
+      background-color: transparent;
+      color: #a259ff;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: #a259ff;
+        color: $text-color;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
