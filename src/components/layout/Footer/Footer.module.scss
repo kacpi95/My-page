@@ -1,12 +1,34 @@
+@use '../../../styles/global.scss' as *;
+
 .footer {
-	width: 100%;
-	padding: 1rem;
-	text-align: center;
-	border-top: 1px solid #e5e5e5;
-	font-size: 0.875rem;
-	color: #555;
+  color: $text-color;
+  padding: 0.5rem 0;
+  text-align: center;
+  border-top: 1px solid #a159ff2a;
+
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .socials {
+    display: flex;
+    gap: 1.5rem;
+
+    a {
+      color: #a259ff;
+      font-size: 1.3rem;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
 }
-.footerContent {
-	max-width: 800px;
-	margin: 0 auto;
-}
+
