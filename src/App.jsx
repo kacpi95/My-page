@@ -13,12 +13,12 @@ function App() {
 			<Header />
 			<Routes>
 				<Route path='/' element={<HomePage />} />
-				<Route path='/about' element={<AboutPage />} />
+				{/* <Route path='/about' element={<AboutPage />} />
 				<Route path='/contact' element={<ContactPage />} />
 				<Route path='/project' element={<ProjectPage />} />
-				<Route path='*' element={<NoPage />} />
+				<Route path='*' element={<NoPage />} /> */}
 			</Routes>
-			<Footer />
+			{/* <Footer /> */}
 		</BrowserRouter>
 	);
 }
