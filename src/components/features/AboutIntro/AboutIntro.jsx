@@ -4,9 +4,10 @@ export default function AboutIntor() {
   return (
     <div className={styles.intro}>
       <h1 className={styles.title}>
-        Hi, I’m <span>Kacpi</span> <span>Developer</span>
+        Hi, I’m <span>Kacper</span>
       </h1>
-      <p className={styles.lead}>
+      <h3 className={styles.titleTwo}>Frontend Developer</h3>
+      <p className={styles.description}>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus
         molestiae quos cupiditate quo esse, fugit consequuntur delectus, iure
         adipisci eveniet rerum, consectetur voluptatum! Nulla delectus ipsa
