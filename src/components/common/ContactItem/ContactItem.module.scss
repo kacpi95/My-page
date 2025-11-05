@@ -1,0 +1,38 @@
+@use '../../../styles/global.scss' as *;
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+
+  svg {
+    padding: 0.8rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    border: 2px solid #a259ff;
+    transition: all 0.3s ease;
+  }
+
+  span {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  &:hover {
+    color: #a259ff;
+
+    svg {
+      background: #a259ff;
+      color: $text-color;
+      transform: scale(1.1);
+    }
+
+    span {
+      color: #a259ff;
+    }
+
+    transform: translateY(-3px);
+  }
+}
