@@ -1,40 +1,23 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-	faDiscord,
-	faLinkedin,
-	faFacebook,
-	faWhatsapp,
-} from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import styles from "./ContactPage.module.scss";
+  faDiscord,
+  faLinkedin,
+  faWhatsapp,
+} from '@fortawesome/free-brands-svg-icons';
+import ContactItem from '../../common/ContactItem/ContactItem';
+import styles from './ContactPage.module.scss';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 export default function ContactPage() {
-	return (
-		<section className={styles.contactSection}>
-			<h2>Wybierz rodzaj kontaktu</h2>
+  return (
+    <section className={styles.contactSection}>
+      <h2>Choose a way to contact me</h2>
 
-			<div className={styles.contactGrid}>
-				<div className={styles.contactItem}>
-					<FontAwesomeIcon icon={faDiscord} />
-					<span>Discord</span>
-				</div>
-				<div className={styles.contactItem}>
-					<FontAwesomeIcon icon={faLinkedin} />
-					<span>LinkedIn</span>
-				</div>
-				<div className={styles.contactItem}>
-					<FontAwesomeIcon icon={faEnvelope} />
-					<span>E-mail</span>
-				</div>
-				<div className={styles.contactItem}>
-					<FontAwesomeIcon icon={faFacebook} />
-					<span>Facebook</span>
-				</div>
-				<div className={styles.contactItem}>
-					<FontAwesomeIcon icon={faWhatsapp} />
-					<span>Whatsapp</span>
-				</div>
-			</div>
-		</section>
-	);
+      <div className={styles.contactList}>
+        <ContactItem icon={faDiscord} label='Discord' />
+        <ContactItem icon={faLinkedin} label='LinkedIn' />
+        <ContactItem icon={faEnvelope} lable='E-mail' />
+        <ContactItem icon={faWhatsapp} label='Whatsapp' />
+      </div>
+    </section>
+  );
 }
