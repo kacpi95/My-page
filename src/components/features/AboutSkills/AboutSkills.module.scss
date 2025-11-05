@@ -1,0 +1,48 @@
+@use '../../../styles/global.scss' as *;
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.skillGroup {
+  .groupTitle {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: $text-color;
+  }
+
+  .skillsList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 0.5rem;
+    gap: 0.8rem;
+    overflow-x: auto;
+
+    .skill {
+      flex: 0 0 auto;
+      padding: 0.6rem 1rem;
+      border: 1px solid #a259ff;
+      border-radius: 6px;
+      color: $text-color;
+      letter-spacing: 1px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: #a259ff;
+        color: $text-color;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .skillsList {
+    gap: 0.5rem;
+  }
+}
