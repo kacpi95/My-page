@@ -6,6 +6,7 @@ import {
 import ContactItem from '../../common/ContactItem/ContactItem';
 import styles from './ContactPage.module.scss';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import CvItem from '../../common/CvItem/CvItem';
 
 export default function ContactPage() {
   return (
@@ -20,6 +21,7 @@ export default function ContactPage() {
         <ContactItem icon={faEnvelope} label='E-mail' />
         <ContactItem icon={faWhatsapp} label='Whatsapp' />
       </div>
+      <CvItem />
     </section>
   );
 }
