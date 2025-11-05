@@ -1,6 +1,7 @@
 import styles from './AboutPage.module.scss';
 import AboutIntro from '../../features/AboutIntro/AboutIntro';
 import AboutImage from '../../features/AboutImage/AboutImage';
+import AboutSKills from '../../features/AboutSkills/AboutSkills';
 
 export default function AboutPage() {
   return (
@@ -10,6 +11,7 @@ export default function AboutPage() {
           <AboutIntro />
           <AboutImage />
         </div>
+        <AboutSKills />
       </div>
     </section>
   );
