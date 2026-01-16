@@ -2,7 +2,7 @@ import styles from './AboutSkills.module.scss';
 import skills from '../../../data/skillsData';
 import Skill from '../../common/Skill/Skill';
 
-export default function AboutSKills() {
+export default function AboutSkills() {
   return (
     <div className={styles.skills}>
       {Object.entries(skills).map(([group, list]) => (

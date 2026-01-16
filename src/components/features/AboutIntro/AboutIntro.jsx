@@ -1,6 +1,6 @@
 import styles from './AboutIntro.module.scss';
 
-export default function AboutIntor() {
+export default function AboutIntro() {
   return (
     <div className={styles.intro}>
       <h1 className={styles.title}>
