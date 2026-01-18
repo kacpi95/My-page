@@ -4,7 +4,7 @@ export default function AboutImage() {
   return (
     <div className={styles.imageContainer}>
       <img
-        src='../../../public/images/kacpiAI.jpg'
+        src='/images/kacpiAI.jpg'
         alt='Image profile'
         className={styles.image}
       />

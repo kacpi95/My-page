@@ -1,15 +1,13 @@
-#contact {
+.contactSection {
   text-align: center;
   padding: 3rem 2rem;
-  background: #f9f9f9;
 }
-#contact div:first-child {
+.contactSection h2 {
   font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 2.5rem;
-  color: #333;
 }
-#contact .contactChoose {
+.contactSection .contactGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   justify-items: center;
@@ -17,32 +15,18 @@
   max-width: 800px;
   margin: 0 auto;
 }
-#contact .contactChoose div {
+.contactSection .contactItem {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  border-radius: 12px;
-  background: #fff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   cursor: pointer;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-#contact .contactChoose div:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+.contactSection .contactItem svg {
+  font-size: 2.2rem;
 }
-#contact .contactChoose div svg {
-  font-size: 2.5rem;
-  color: #ff6600;
-  transition: color 0.25s ease;
-}
-#contact .contactChoose div span {
-  margin-top: 0.7rem;
+.contactSection .contactItem span {
+  margin-top: 0.6rem;
   font-size: 1rem;
   font-weight: 500;
-  color: #444;
-}
-#contact .contactChoose div:hover svg {
-  color: #e65c00;
 }/*# sourceMappingURL=ContactPage.module.css.map */
